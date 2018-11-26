@@ -32,9 +32,9 @@ set_if(SYMLINKABLE LINUX OR DARWIN OR CYGWIN)
 # inside "bin" and "lib64" directories. At least this maintains
 # the current status. Shall this be not desired, override values
 # of CMAKE_INSTALL_BINDIR, CMAKE_INSTALL_LIBDIR and CMAKE_INSTALL_INCLUDEDIR.
-if (NOT DEFINED CMAKE_INSTALL_LIBDIR)
+# if (NOT DEFINED CMAKE_INSTALL_LIBDIR)
 	include(GNUInstallDirs)
-endif()
+# endif()
 
 set (SRT_VERSION 1.3.1)
 set_version_variables(SRT_VERSION ${SRT_VERSION})
